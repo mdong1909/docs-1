@@ -115,8 +115,9 @@ The Astro `<style>` tag can also reference any variables from your frontmatter s
 
 2. Update your existing `<style>` tag below to first define, then use this `skillColor` variable inside double curly braces.
 
-    ```astro title="src/pages/about.astro" "define:vars={{skillColor}}" "var(--skillColor)" del={7} ins={8}
-    <style define:vars={{skillColor}}> 
+    ```astro title="src/pages/about.astro" "define:vars={{skillColor}}" "var(--skillColor)" del={1,8} ins={2,9}
+  <style>  
+  <style define:vars={{skillColor}}> 
       h1 {
         color: purple;
         font-size: 4rem;
